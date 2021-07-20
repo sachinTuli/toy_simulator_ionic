@@ -1,0 +1,115 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+:root {
+  --white: #fff;
+  --black: #0e0e0f;
+  --primary: #66FCF1;
+  --primary-dark: #45A29E;
+  --secondary: #1F2833;
+  --transparent: rgba(0, 0, 0, 0);
+  --text-light: #999999;
+  --text-dark: #444444;
+  --text-black: #0e0e0f;
+  --bg-color: #f9f9f9;
+  --green_color: #54cb1f;
+  --red_color: #f83232;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  --backgroud: var(--bg-color);
+}
+.float-right {
+  float: right;
+}
+.mr-20 {
+  margin-right: 20px;
+}
+h1 {
+  --color: var(--secondary);
+  font-weight: bold; 
+  width: 100%;
+}
+.text-center{
+  text-align: center;
+} 
+.vertical-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  vertical-align: middle;
+  padding-left: 7vw;
+}
+
+ion-header {
+  z-index: 999;
+  &::after {
+    display: none !important;
+  }
+
+  ion-toolbar {
+    --background: var(--secondary)!important ;
+
+    ion-title {
+      color: #66FCF1;
+      font-weight: bolder;
+    }
+  }
+}
+div.without-robot {
+  width: 20vw;
+  height: 20vw;
+  background: #7dc7c3;;
+}
+
+div.with-robot {
+  width: 20vw;
+  height: 20vw;
+  background: #1F2833;
+}
+
+td {
+  border: 1px solid white;
+}
+i {
+  color: #66FCF1;
+  font-weight: bold;
+  font-size: 22px;
+}
+ion-button {
+  margin: 0px !important;
+}
+ion-list {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+h3{
+  --color: var(--secondary);
+  font-weight: bolder;
+}

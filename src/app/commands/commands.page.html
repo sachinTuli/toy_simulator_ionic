@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <i class="material-icons" [routerLink]="['/home']">arrow_back</i>
+      Commands</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <h3>1. PLACE X,Y,F</h3>
+    <p>PLACE will put the toy robot on the table in position X,Y and facing NORTH, SOUTH,
+      EAST or WEST.</p>
+  </ion-list>
+  <ion-list>
+    <h3>2. MOVE</h3>
+    <p>MOVE will move the toy robot one unit forward in the direction it is currently facing.</p>
+  </ion-list>
+  <ion-list>
+    <h3>3. LEFT</h3>
+    <p>LEFT will rotate the robot 90 degrees in the specified direction without
+      changing the position of the robot.</p>
+  </ion-list>
+  <ion-list>
+    <h3>4. RIGHT</h3>
+    <p>RIGHT will rotate the robot 90 degrees in the specified direction without
+      changing the position of the robot.</p>
+  </ion-list>
+  <ion-list>
+    <h3>5. REPORT</h3>
+    <p>REPORT will announce the X,Y and F of the robot. This can be in any form, but
+      standard output is sufficient.</p>
+  </ion-list>
+</ion-content>

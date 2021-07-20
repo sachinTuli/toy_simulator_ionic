@@ -1,0 +1,8 @@
+<ion-item lines="none">
+  <h1>
+    Output
+  </h1>
+</ion-item>
+<ion-list lines="none">
+  <p *ngFor="let output of output" [ngClass]="output.type == 'ERROR'? 'error': 'success'">{{output.message}}</p>
+</ion-list>

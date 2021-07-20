@@ -1,0 +1,11 @@
+<ion-item lines="none">
+  <h1>{{heading}}
+    <span class="float-right"><ion-button (click)="clearCommand()" class="float-right" size="default" color="light">Clear</ion-button></span>
+  </h1>
+</ion-item>
+<ion-item>
+  <ion-input placeholder="Type command and hit enter" [(ngModel)]="command"
+  (keyup.enter)="submitCommand()"
+  class="input">
+  </ion-input>
+</ion-item>

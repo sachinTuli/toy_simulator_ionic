@@ -1,0 +1,17 @@
+<ion-item lines="none">
+  <h1>Robot Board
+    <span class="float-right"><ion-button [routerLink]="['/commands']" class="float-right" size="default" color="light">Commands</ion-button></span>
+  </h1>
+</ion-item>
+<table>
+  <tr *ngFor="let row of rows">
+    <td *ngFor="let col of columns">
+      <div [title]="row + ',' + col" ngClass="{{getClass(row, col)}}" class="text-center vertical-center">
+        <i *ngIf="hasRobot(row, col) && ((this._robotService.getMove() | async)?.robotFace == 'SOUTH')"class="material-icons">arrow_downward</i>
+        <i *ngIf="hasRobot(row, col) && ((this._robotService.getMove() | async)?.robotFace == 'EAST')"class="material-icons">arrow_forward</i>
+        <i *ngIf="hasRobot(row, col) && ((this._robotService.getMove() | async)?.robotFace == 'NORTH')"class="material-icons">arrow_upward</i>
+        <i *ngIf="hasRobot(row, col) && ((this._robotService.getMove() | async)?.robotFace == 'WEST')"class="material-icons">arrow_back</i>
+      </div>
+    </td>
+  </tr>
+</table>
